@@ -13,9 +13,9 @@ O **Amigo Secreto** é um projeto que facilita a organização e o sorteio de am
 
 
 ## 🛠️ Tecnologias Utilizadas
-- **Linguagem**: Python / JavaScript
-- **Frameworks**: Flask / React (caso esteja usando alguma tecnologia específica)
-- **Banco de Dados**: SQLite / Firebase (caso necessário)
+- **Linguagem**: JavaScript
+- **Frameworks**: Flask / React 
+- **Banco de Dados**: SQLite 
 - **Versionamento**: Git & GitHub
 
 ## 🔧 Como Executar o Projeto
