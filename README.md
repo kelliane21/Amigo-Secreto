@@ -80,11 +80,14 @@ function adicionarAmigo() {
     input.value = "";
 }
 
-// Função para exibir a lista de amigos
+// Função para exibir a lista de amigos na tela
 function atualizarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; // Limpa a lista antes de atualizar
-
+    
+    // Limpar a lista existente
+    lista.innerHTML = "";
+    
+    // Percorrer o array e adicionar cada nome à lista
     amigos.forEach((nome) => {
         let li = document.createElement("li");
         li.textContent = nome;
@@ -98,7 +101,12 @@ function sortearAmigo() {
         alert("É necessário pelo menos dois amigos para sortear!");
         return;
     }
-    let sorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    
+    // Gerar um índice aleatório
+    let indiceSorteado = Math.floor(Math.random() * amigos.length);
+    
+    // Obter o nome sorteado
+    let sorteado = amigos[indiceSorteado];
     let resultadoLista = document.getElementById("resultado");
     
     // Exibir o nome sorteado
